@@ -1,0 +1,726 @@
+body {
+    overflow-x: hidden;
+}
+
+.home-left {
+    background-color: #273C74;
+}
+
+.home-content {
+    padding: 3rem;
+
+}
+
+.text {
+    color: white;
+
+}
+
+.gap-bottom {
+    margin-bottom: 50px;
+}
+
+.text-h1 {
+    background-color: #ED2025;
+    font-size: 96px;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    padding: 1rem 3rem;
+}
+
+.text-h3 {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.text-p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+.election {
+    color: white;
+}
+
+
+.election {
+    display: flex;
+    align-items: center;
+}
+
+.election p {
+    margin-left: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 29px;
+    padding: 3rem;
+}
+
+#talking-points {
+    background-image: url('./Elements/images/background.svg');
+    height: 396px;
+    font-family: "Poppins", sans-serif;
+
+
+}
+
+.talking-header {
+    text-align: center;
+    color: white;
+    padding: 5rem 0;
+}
+
+.talking-h3 {
+    font-size: 22px;
+    line-height: 24px;
+    opacity: 0.5;
+
+}
+
+.talking-h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 36px;
+    margin-top: 1rem;
+}
+
+.cards {
+    width: 411px;
+    height: 351px;
+    border-radius: 14px;
+    background-color: white;
+    padding: 3rem;
+
+}
+
+.card-h1 {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+}
+
+.card-p {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #7B849A;
+}
+
+.gap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+.background-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F6FB;
+    z-index: -1;
+
+}
+
+.red {
+    background-color: #ED2025;
+    margin-top: 15rem;
+    width: 720px;
+    height: 600px;
+    color: white;
+}
+
+.blue {
+    background-color: #273C74;
+    width: 670px;
+    height: 600px;
+    margin-top: 15rem;
+    color: white;
+}
+
+#biography {
+    font-family: "Poppins", sans-serif;
+}
+
+.bio-h1 {
+    font-size: 46px;
+    line-height: 56px;
+
+}
+
+.bio-p {
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 33px;
+    color: #FFFFFF 70%;
+}
+
+.bio-h6 {
+    font-size: 24px;
+    line-height: 39px;
+}
+
+.bio-p2 {
+    font-weight: 100;
+
+}
+
+.biography-header {
+    opacity: 0.5;
+    position: absolute;
+    margin-top: 5rem;
+    left: 50%;
+    font-size: 100px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+
+.biography-header h1 {
+    font-size: 90px;
+}
+
+#templates {
+    font-family: "Poppins", sans-serif;
+    margin-top: 5rem;
+
+
+}
+
+#templates h1 {
+    font-weight: 600;
+}
+
+#templates p {
+    font-size: 21px;
+    line-height: 20px;
+    font-weight: 200;
+}
+
+.content-text {
+    padding: 10rem 12rem 0 3rem;
+}
+
+.content-blue-text {
+
+    padding: 10rem 3rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+
+
+.gallery-boject {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+}
+
+#footer {
+    background-color: #273C74;
+    color: white;
+
+
+}
+
+.footer-content {
+    margin-top: 5rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#footer h1 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 55px;
+    margin-bottom: 3rem;
+
+}
+
+.contact {
+    font-weight: 100;
+    font-size: 20px;
+}
+
+
+@media (max-width: 375px) {
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
+    .text-h1 {
+        background-color: #ED2025;
+        font-size: 46px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        padding: 1rem 3rem;
+    }
+
+    .text-h3 {
+        font-size: 30px;
+    }
+
+    .text-p {
+        font-size: 19px;
+    }
+
+    .election {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talking-h1 {
+
+        font-size: 40px;
+
+    }
+
+    .background-div {
+
+
+
+        background-color: #F4F6FB;
+
+
+    }
+
+    .cards {
+        width: 350px;
+
+    }
+
+    .background-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F6FB;
+        z-index: -1;
+
+    }
+
+    .content-text {
+        padding: 5rem 22rem 0 0;
+    }
+
+    .content-blue-text {
+        padding: 6rem 18rem 0 0;
+        align-items: center;
+    }
+
+    .red {
+        margin-top: 70rem;
+        text-align: center;
+
+    }
+
+    .blue {
+        margin: 0;
+        padding: 0;
+    }
+
+    .biography-header {
+        margin-top: 0;
+    }
+
+    .biography-header h1 {
+        font-size: 25px;
+
+        margin-top: 6rem;
+
+    }
+
+    .bio-h1 {
+        font-size: 30px;
+    }
+
+    .bio-p {
+        text-align: center;
+
+    }
+
+    .template-header {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 575.98px) {
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
+    .text-h1 {
+        background-color: #ED2025;
+        font-size: 46px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        padding: 1rem 3rem;
+    }
+
+    .text-h3 {
+        font-size: 30px;
+    }
+
+    .text-p {
+        font-size: 19px;
+    }
+
+    .election {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talking-h1 {
+
+        font-size: 40px;
+
+    }
+
+    .background-div {
+
+
+
+        background-color: #F4F6FB;
+
+
+    }
+
+    .cards {
+        width: 350px;
+
+    }
+
+    .background-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F6FB;
+        z-index: -1;
+
+    }
+
+    .content-text {
+        padding: 5rem 22rem 0 0;
+    }
+
+    .content-blue-text {
+        padding: 6rem 18rem 0 0;
+        align-items: center;
+    }
+
+    .red {
+        margin-top: 70rem;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .blue {
+        margin: 0;
+        padding: 0;
+    }
+
+    .biography-header {
+        margin-top: 0;
+    }
+
+    .biography-header h1 {
+        font-size: 25px;
+
+        margin-top: 6rem;
+
+    }
+
+    .bio-h1 {
+        font-size: 30px;
+    }
+
+    .bio-p {
+        text-align: center;
+
+    }
+
+    .template-header {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
+    .text-h1 {
+        background-color: #ED2025;
+        font-size: 46px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        padding: 1rem 3rem;
+    }
+
+    .text-h3 {
+        font-size: 30px;
+    }
+
+    .text-p {
+        font-size: 19px;
+    }
+
+    .election {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talking-h1 {
+
+        font-size: 40px;
+
+    }
+
+    .background-div {
+
+
+
+        background-color: #F4F6FB;
+
+
+    }
+
+    .cards {
+        width: 350px;
+
+    }
+
+    .background-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F6FB;
+        z-index: -1;
+
+    }
+
+    .content-text {
+        padding: 5rem 22rem 0 0;
+    }
+
+    .content-blue-text {
+        padding: 6rem 18rem 0 0;
+        align-items: center;
+    }
+
+    .red {
+        margin-top: 70rem;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .blue {
+        margin: 0;
+        padding: 0;
+    }
+
+    .biography-header {
+        margin-top: 0;
+    }
+
+    .biography-header h1 {
+        font-size: 25px;
+
+        margin-top: 6rem;
+
+    }
+
+    .bio-h1 {
+        font-size: 30px;
+    }
+
+    .bio-p {
+        text-align: center;
+
+    }
+
+    .template-header {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .home-content {
+        padding: 0;
+    }
+
+    .text-h1 {
+        background-color: #ED2025;
+        font-size: 46px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        padding: 1rem 3rem;
+    }
+
+    .text-h3 {
+        font-size: 30px;
+    }
+
+    .text-p {
+        font-size: 19px;
+    }
+
+    .election {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talking-h1 {
+
+        font-size: 40px;
+
+    }
+
+    .background-div {
+
+
+
+        background-color: #F4F6FB;
+
+
+    }
+
+    .cards {
+        width: 350px;
+
+    }
+
+    .background-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F6FB;
+        z-index: -1;
+
+    }
+
+    .content-text {
+        padding: 9rem 4rem 0 3rem;
+    }
+
+    .content-blue-text {
+        padding: 9rem 4rem 0 3rem;
+        align-items: center;
+    }
+
+    .red {
+        margin-top: 70rem;
+        text-align: center;
+        width: 100%;
+        
+
+    }
+
+    .blue {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .biography-header h1 {
+        font-size: 25px;
+
+        margin-top: 2rem;
+
+    }
+
+    .bio-h1 {
+        font-size: 30px;
+    }
+
+    .bio-p {
+        text-align: center;
+
+    }
+
+    .template-header {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 5rem;
+    }
+
+    #footer {
+        text-align: center;
+    }
+
+
+}
