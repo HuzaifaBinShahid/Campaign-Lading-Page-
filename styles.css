@@ -4,7 +4,9 @@ body {
 
 .home-left {
     background-color: #273C74;
+
 }
+
 
 .home-content {
     padding: 3rem;
@@ -20,12 +22,46 @@ body {
     margin-bottom: 50px;
 }
 
+.campaign-box {
+    margin-left: 3rem;
+}
+
+.col-lg-6.america {
+    width: 50%;
+    height: 1024px;
+    background-image: url(./Elements/images/America.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    text-align: center;
+}
+
+.america-content {
+    position: absolute;
+    bottom: 0;
+}
+
+.text-pre {
+
+
+
+    text-align: center;
+    background-color: #ED2025;
+    color: white;
+    font-size: 65px;
+    padding: 1rem;
+    margin: 0;
+}
+
+
 .text-h1 {
     background-color: #ED2025;
     font-size: 96px;
+    line-height: 100px;
     font-family: "Inter", sans-serif;
     font-weight: 700;
     padding: 1rem 3rem;
+    display: inline-block;
 }
 
 .text-h3 {
@@ -37,8 +73,8 @@ body {
 .text-p {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 20px;
-    line-height: 29px;
+    font-size: 32px;
+    line-height: 40px;
 }
 
 .election {
@@ -55,18 +91,32 @@ body {
     margin-left: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
-    font-size: 20px;
-    line-height: 29px;
+    font-size: 32px;
+    line-height: 40px;
     padding: 3rem;
 }
 
 #talking-points {
     background-image: url('./Elements/images/background.svg');
     height: 396px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: "Poppins", sans-serif;
 
 
 }
+
+/* CSS outside of the media query */
+.image-p.normal {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    /* Center the image horizontally */
+}
+
 
 .talking-header {
     text-align: center;
@@ -95,6 +145,7 @@ body {
     background-color: white;
     padding: 3rem;
 
+
 }
 
 .card-h1 {
@@ -112,9 +163,13 @@ body {
 
 .gap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 5rem;
+    padding: 1rem;
 }
+
+
+
 
 .background-div {
     position: fixed;
@@ -127,20 +182,35 @@ body {
 
 }
 
+.col-lg-6 {
+    min-height: 600px;
+}
+
+.red,
+.blue {
+    margin-top: 20rem;
+    color: white;
+    padding: 3rem;
+    width: 50%;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content-text,
+.content-blue-text {
+    padding: 3rem;
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
 .red {
     background-color: #ED2025;
-    margin-top: 15rem;
-    width: 720px;
-    height: 600px;
-    color: white;
 }
 
 .blue {
     background-color: #273C74;
-    width: 670px;
-    height: 600px;
-    margin-top: 15rem;
-    color: white;
 }
 
 #biography {
@@ -171,9 +241,9 @@ body {
 }
 
 .biography-header {
-    opacity: 0.5;
+
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 18.5rem;
     left: 50%;
     font-size: 100px;
     transform: translate(-50%, -50%);
@@ -182,8 +252,16 @@ body {
 }
 
 .biography-header h1 {
-    font-size: 90px;
+    font-size: 70px;
+    opacity: 0.5;
 }
+
+
+/* .image-p {
+    position: absolute;
+    bottom: 0;
+    transform: translateX(25%);
+} */
 
 #templates {
     font-family: "Poppins", sans-serif;
@@ -204,6 +282,7 @@ body {
 
 .content-text {
     padding: 10rem 12rem 0 3rem;
+    min-height: 200px !important;
 }
 
 .content-blue-text {
@@ -217,21 +296,32 @@ body {
 
 
 
+.template-header p {
+    padding: 0 !important;
+}
+
+
 .gallery-boject {
     display: flex;
-    justify-content: space-around;
     margin-bottom: 5rem;
 }
 
 #footer {
-    background-color: #273C74;
+    background-image: url(./Elements/images/footer.svg);
     color: white;
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%; 
+    padding: 5rem 0; 
+    
 
 
 }
 
+
+
 .footer-content {
-    margin-top: 5rem;
+    margin-top: 1rem;
     font-family: "Poppins", sans-serif;
 }
 
@@ -239,7 +329,7 @@ body {
     font-weight: 400;
     font-size: 38px;
     line-height: 55px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -248,8 +338,379 @@ body {
     font-size: 20px;
 }
 
+.card1-text {
+    position: relative;
+
+}
+
+.card1-text {
+    position: absolute;
+    transform: translateY(70%);
+    margin-left: 1.5rem;
+}
+
+.card1-text h3 {
+    color: #273C74;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 39px;
+}
+
+.card1-text h5 {
+    position: absolute;
+    color: red;
+    font-size: 14px;
+    line-height: 40px;
+    transform: translateY(230%);
+}
+
+.card1 {
+    position: relative;
+}
+
+.card1-img img {
+    position: absolute;
+    bottom: 15%;
+    left: 80%;
+    transform: translateX(-50%);
+    max-width: 230px;
+}
+
+
+
+
+
+.card2 {
+    position: relative;
+}
+
+.card2-text {
+    position: absolute;
+    top: 35%;
+    margin-left: 1.5rem;
+}
+
+.card2-text h3 {
+    color: white;
+    font-size: 30px;
+    line-height: 28px;
+    font-weight: 900;
+
+}
+
+.card2-vote {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+
+}
+
+.card2-vote p {
+    font-size: 14px;
+    line-height: 29px;
+    font-weight: 600 !important;
+    color: white;
+}
+
+
+.card2 img {
+    position: absolute;
+    bottom: 4.5rem;
+    right: 0;
+}
+
+.card3 {
+    position: relative;
+    transform: rotate(15deg);
+    background-color: #F4F6FB;
+}
+
+.card3-text {
+    position: absolute;
+    top: 5rem;
+    margin-left: 2rem;
+
+}
+
+.card3-text h3 {
+    color: white;
+    font-size: 40px;
+    line-height: 30px;
+    margin-bottom: 1rem;
+}
+
+.card3-text h2 {
+    color: white;
+    font-size: 50px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+.box:hover {
+    animation: moveUp 1s forwards;
+}
+
+@keyframes moveUp {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-30px);
+    }
+}
+
+.zoom-in {
+
+    transition: transform 0.5s ease;
+}
+
+.zoom-in:hover {
+    transform: scale(0.8);
+}
+
+.america-content {
+    margin-top: 0;
+}
+
+#templates .container {
+    max-width: 1600px !important;
+}
+
+
 
 @media (max-width: 375px) {
+
+
+    .image-p {
+        position: static;
+        transform: none;
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+    }
+
+    .col-lg-6.america {
+        background-image: url(./Elements/images/America.svg);
+        width: 100%;
+        height: 1200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+    }
+
+
+    .text-h1 {
+        background-color: #ED2025;
+        font-size: 46px;
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .text-pre {
+        font-size: 40px;
+
+    }
+
+    .text-h3 {
+        font-size: 40px;
+    }
+
+    .text-p {
+        font-size: 30px;
+    }
+
+    .election {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .talking-h1 {
+        font-size: 40px;
+    }
+
+    .background-div {
+        background-color: #F4F6FB;
+    }
+
+    .cards {
+        width: 350px;
+        text-align: left;
+    }
+
+    .gap {
+        display: flex;
+        justify-content: center;
+    }
+
+    .background-div {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F4F6FB;
+        z-index: -1;
+    }
+
+    .content-text {
+        padding: 0 4rem 0 3rem;
+    }
+
+    .content-blue-text {
+        padding: 6rem 18rem 0 0;
+        align-items: center;
+        padding-right: 0;
+    }
+
+    .biography-header {
+        position: absolute;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: content-box;
+
+    }
+
+    .biography-header h1 {
+        font-size: 50px;
+        position: relative;
+        top: -364px;
+        left: 30px;
+
+    }
+
+    .bio-h1 {
+        font-size: 30px;
+    }
+
+    .bio-p {
+        text-align: center;
+
+    }
+
+    .template-header {
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: 5rem;
+
+    }
+
+    #templates {
+        width: 111% !important;
+    }
+
+    #footer {
+        text-align: center;
+        width: 111%;
+        background-color: #273C74;
+        background-size: contain;
+    }
+
+  
+
+
+
+    .person-image {
+        width: 650px;
+        height: 1119px;
+    }
+
+
+
+    .footer-content {
+        max-width: 1100px !important;
+
+    }
+
+    .text-pre {
+        font-size: 42px;
+    }
+
+    .footer-person {
+        width: 276px;
+
+    }
+
+
+
+    body {
+
+    
+        width: 200% !important;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+
+
+
+    .image-p.normal {
+        position: absolute;
+        bottom: 21%;
+        left: 11%;
+        right: 0;
+        margin: 0 auto;
+        max-width: 30% !important;
+        max-height: 50% !important; 
+    }
+
+
+    .blue {
+        height: auto !important;
+        text-align: center;
+        color: white;
+        margin: 0;
+        width: 111% !important;
+        padding-top: 10rem;
+    }
+
+    .red {
+        margin-top: 80rem;
+        padding-bottom: 10rem;
+        padding-top: 14rem;
+        height: auto !important;
+        text-align: center;
+        color: white;
+        width: 111% !important;
+
+    }
+
+    #talking-points {
+        width: 111% !important;
+    }
+
+    #home {
+        width: 109%;
+    }
+
+
+}
+
+/* @media (max-width: 575.98px) {
     .home-section {
         display: flex;
         flex-direction: column;
@@ -326,6 +787,7 @@ body {
     .red {
         margin-top: 70rem;
         text-align: center;
+       
 
     }
 
@@ -365,128 +827,12 @@ body {
     }
 
 
-}
-
-@media (max-width: 575.98px) {
-    .home-section {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .home-content {
-        padding: 0;
-    }
-
-    .text-h1 {
-        background-color: #ED2025;
-        font-size: 46px;
-        font-family: "Inter", sans-serif;
-        font-weight: 700;
-        padding: 1rem 3rem;
-    }
-
-    .text-h3 {
-        font-size: 30px;
-    }
-
-    .text-p {
-        font-size: 19px;
-    }
-
-    .election {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .talking-h1 {
-
-        font-size: 40px;
-
-    }
-
-    .background-div {
-
-
-
-        background-color: #F4F6FB;
-
-
-    }
-
-    .cards {
-        width: 350px;
-
-    }
-
-    .background-div {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: #F4F6FB;
-        z-index: -1;
-
-    }
-
-    .content-text {
-        padding: 5rem 22rem 0 0;
-    }
-
-    .content-blue-text {
-        padding: 6rem 18rem 0 0;
-        align-items: center;
-    }
-
-    .red {
-        margin-top: 70rem;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    .blue {
-        margin: 0;
-        padding: 0;
-    }
-
-    .biography-header {
-        margin-top: 0;
-    }
-
-    .biography-header h1 {
-        font-size: 25px;
-
-        margin-top: 6rem;
-
-    }
-
-    .bio-h1 {
-        font-size: 30px;
-    }
-
-    .bio-p {
-        text-align: center;
-
-    }
-
-    .template-header {
-        text-align: center;
-        font-weight: 400;
-        margin-bottom: 5rem;
-    }
-
-    #footer {
-        text-align: center;
-    }
-
-
-}
+} */
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+
     .home-section {
         display: flex;
         flex-direction: column;
@@ -604,11 +950,12 @@ body {
 
 
 }
-
 
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+
     .home-section {
         display: flex;
         flex-direction: column;
@@ -686,7 +1033,7 @@ body {
         margin-top: 70rem;
         text-align: center;
         width: 100%;
-        
+
 
     }
 
@@ -721,6 +1068,135 @@ body {
     #footer {
         text-align: center;
     }
+
+    .image-p {
+        position: absolute;
+        bottom: 0;
+    }
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .col-lg-6.america {
+        background-image: url(./Elements/images/America.svg);
+        width: 50%;
+        height: 1200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+
+    }
+
+
+
+    .person-image {
+        width: 650px;
+        height: 1119px;
+    }
+
+
+
+    .footer-content {
+        max-width: 1100px !important;
+
+    }
+
+    .text-pre {
+        font-size: 42px;
+        width: 100%;
+    }
+
+    .red {
+        width: 100%;
+        height: auto;
+    }
+
+    .blue {
+        width: 100%;
+    }
+
+
+    .biography-header {
+        margin-top: 0;
+    }
+
+
+
+    /* .image-p {
+        position: absolute;
+        bottom: 0 !important;
+       transform: translateX(115%) !important;
+    } */
+
+    .template-card {
+
+        width: 400px;
+        height: 400px;
+        position: relative;
+    }
+
+
+    .right-side {
+        background-color: #273C74;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        top: 0;
+
+    }
+
+    .right-side img {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+
+    .left-side {
+        position: absolute;
+        padding-left: 1rem;
+        background-color: #E5E5E5;
+    }
+
+    .left-side h3 {
+        font-size: 40px;
+        line-height: 37px;
+        color: #273C74;
+        font-weight: 900;
+        margin-bottom: 1rem;
+    }
+
+    .left-side h1 {
+        font-size: 23px;
+        line-height: 22px;
+        color: #ED2025;
+        font-weight: 700;
+    }
+
+    .label-text {
+        color: white;
+        position: absolute;
+        padding: .5rem 0 0 1rem;
+        justify-content: center;
+
+    }
+
+
+    .label-text span {
+        font-size: 18px;
+        line-height: 18px;
+        font-weight: 800;
+    }
+
+    ;
+
 
 
 }
