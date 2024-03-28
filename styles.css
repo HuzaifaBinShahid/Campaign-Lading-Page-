@@ -2,29 +2,25 @@ body {
     overflow-x: hidden;
 }
 
+
+/* Home Section */
+
 .home-left {
     background-color: #273C74;
-
 }
-
 
 .home-content {
     padding: 3rem;
-
 }
 
 .text {
     color: white;
-
 }
 
 .gap-bottom {
     margin-bottom: 50px;
 }
 
-.campaign-box {
-    margin-left: 3rem;
-}
 
 .col-lg-6.america {
     width: 50%;
@@ -42,9 +38,6 @@ body {
 }
 
 .text-pre {
-
-
-
     text-align: center;
     background-color: #ED2025;
     color: white;
@@ -52,7 +45,6 @@ body {
     padding: 1rem;
     margin: 0;
 }
-
 
 .text-h1 {
     background-color: #ED2025;
@@ -96,6 +88,8 @@ body {
     padding: 3rem;
 }
 
+/* Talking Points (Second Section) */
+
 #talking-points {
     background-image: url('./Elements/images/background.svg');
     height: 396px;
@@ -107,14 +101,12 @@ body {
 
 }
 
-/* CSS outside of the media query */
 .image-p.normal {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     margin: 0 auto;
-    /* Center the image horizontally */
 }
 
 
@@ -144,8 +136,6 @@ body {
     border-radius: 14px;
     background-color: white;
     padding: 3rem;
-
-
 }
 
 .card-h1 {
@@ -169,7 +159,7 @@ body {
 }
 
 
-
+/* Biography (Third Section) */
 
 .background-div {
     position: fixed;
@@ -257,17 +247,15 @@ body {
 }
 
 
-/* .image-p {
-    position: absolute;
-    bottom: 0;
-    transform: translateX(25%);
-} */
+/* Design Templates (Fourth Section) */
 
 #templates {
     font-family: "Poppins", sans-serif;
     margin-top: 5rem;
+}
 
-
+#templates .container {
+    max-width: 1600px !important;
 }
 
 #templates h1 {
@@ -286,61 +274,23 @@ body {
 }
 
 .content-blue-text {
-
     padding: 10rem 3rem 0 0;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-
 }
-
-
 
 .template-header p {
     padding: 0 !important;
 }
-
 
 .gallery-boject {
     display: flex;
     margin-bottom: 5rem;
 }
 
-#footer {
-    background-image: url(./Elements/images/footer.svg);
-    color: white;
-    background-repeat: no-repeat;
-    background-size:cover;
-    width: 100%; 
-    padding: 5rem 0; 
-    
-
-
-}
-
-
-
-.footer-content {
-    margin-top: 1rem;
-    font-family: "Poppins", sans-serif;
-}
-
-#footer h1 {
-    font-weight: 400;
-    font-size: 38px;
-    line-height: 55px;
-    margin-bottom: 2rem;
-
-}
-
-.contact {
-    font-weight: 100;
-    font-size: 20px;
-}
-
 .card1-text {
     position: relative;
-
 }
 
 .card1-text {
@@ -375,9 +325,6 @@ body {
     transform: translateX(-50%);
     max-width: 230px;
 }
-
-
-
 
 
 .card2 {
@@ -448,9 +395,36 @@ body {
 
 
 
+/* Footer (Fifth Section) */
+
+#footer {
+    background-image: url(./Elements/images/footer.svg);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 5rem 0;
+}
+
+.footer-content {
+    margin-top: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+#footer h1 {
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 55px;
+    margin-bottom: 2rem;
+}
+
+.contact {
+    font-weight: 100;
+    font-size: 20px;
+}
 
 
-
+/* Animation for talking points Section */
 
 .box:hover {
     animation: moveUp 1s forwards;
@@ -479,14 +453,17 @@ body {
     margin-top: 0;
 }
 
-#templates .container {
-    max-width: 1600px !important;
-}
 
 
+/* Responsive for smaller (mobile) screens */
 
 @media (max-width: 375px) {
 
+    body {
+        width: 100% !important;
+        text-align: center;
+        overflow-x: hidden;
+    }
 
     .image-p {
         position: static;
@@ -495,8 +472,6 @@ body {
         width: auto;
         height: auto;
     }
-
-
 
     .home-section {
         display: flex;
@@ -529,7 +504,7 @@ body {
     }
 
     .text-pre {
-        font-size: 40px;
+        font-size: 28px !important;
 
     }
 
@@ -546,6 +521,10 @@ body {
         flex-direction: column;
     }
 
+    .election p {
+        padding: 0;
+    }
+
     .talking-h1 {
         font-size: 40px;
     }
@@ -554,10 +533,7 @@ body {
         background-color: #F4F6FB;
     }
 
-    .cards {
-        width: 350px;
-        text-align: left;
-    }
+
 
     .gap {
         display: flex;
@@ -575,7 +551,7 @@ body {
     }
 
     .content-text {
-        padding: 0 4rem 0 3rem;
+        padding: 0;
     }
 
     .content-blue-text {
@@ -595,13 +571,15 @@ body {
 
     }
 
+
     .biography-header h1 {
-        font-size: 50px;
+        font-size: 25px;
         position: relative;
         top: -364px;
-        left: 30px;
-
+        left: 0px;
     }
+
+
 
     .bio-h1 {
         font-size: 30px;
@@ -619,54 +597,72 @@ body {
 
     }
 
-    #templates {
-        width: 111% !important;
+    .card1 object {
+        width: 350px;
     }
+
+    .card1-text {
+        transform: translateY(60%);
+        margin: 5px;
+
+    }
+
+    .card1-text h3 {
+        margin-top: 15px !important;
+    }
+
+    .card1-text h5 {
+        margin-top: 0 !important;
+    }
+
+    .card1-img img {
+        bottom: 21%;
+        left: 78%;
+        max-width: 220px;
+    }
+
+    .card2 object {
+        width: 350px;
+
+    }
+
+    .card2 img {
+        bottom: 5.5rem;
+        right: -32px;
+    }
+
+    .card2-vote p {
+        margin-bottom: 2rem;
+    }
+
+    .card3 object {
+        width: 330px;
+    }
+
+    .card3-text {
+
+        top: 6rem;
+    }
+
 
     #footer {
         text-align: center;
-        width: 111%;
         background-color: #273C74;
         background-size: contain;
     }
-
-  
-
-
 
     .person-image {
         width: 650px;
         height: 1119px;
     }
 
-
-
     .footer-content {
         max-width: 1100px !important;
-
-    }
-
-    .text-pre {
-        font-size: 42px;
     }
 
     .footer-person {
         width: 276px;
-
     }
-
-
-
-    body {
-
-    
-        width: 200% !important;
-        text-align: center;
-        overflow-x: hidden;
-    }
-
-
-
 
     .image-p.normal {
         position: absolute;
@@ -675,16 +671,15 @@ body {
         right: 0;
         margin: 0 auto;
         max-width: 30% !important;
-        max-height: 50% !important; 
+        max-height: 50% !important;
     }
-
 
     .blue {
         height: auto !important;
         text-align: center;
         color: white;
         margin: 0;
-        width: 111% !important;
+        width: 100% !important;
         padding-top: 10rem;
     }
 
@@ -695,19 +690,8 @@ body {
         height: auto !important;
         text-align: center;
         color: white;
-        width: 111% !important;
-
+        width: 100% !important;
     }
-
-    #talking-points {
-        width: 111% !important;
-    }
-
-    #home {
-        width: 109%;
-    }
-
-
 }
 
 /* @media (max-width: 575.98px) {
@@ -830,8 +814,6 @@ body {
 } */
 
 @media (min-width: 576px) and (max-width: 767.98px) {
-
-
 
     .home-section {
         display: flex;
